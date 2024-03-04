@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner entrada = new Scanner(System.in);
-        int num1, num2,sinal;
-        
-        do{
+        int num1, num2, sinal;
+
+        do {
             System.out.println("\n Digite um número: ");
             num1 = entrada.nextInt();
             System.out.println("Digite outro número: ");
@@ -15,21 +15,21 @@ public class App {
             System.out.println("Caso queira parar o programa digite 0");
             switch (sinal) {
                 case 1:
-                    System.out.printf("a soma dos valores é " + (num1+num2));
+                    System.out.printf("a soma dos valores é " + (num1 + num2));
                     break;
                 case 2:
-                    System.out.printf("o produto dos valores é \n" + (num1-num2));
+                    System.out.printf("o produto dos valores é \n" + (num1 - num2));
                     break;
                 case 3:
-                    System.out.printf("a multiplicação dos valores é \n" + num1*num2);
+                    System.out.printf("a multiplicação dos valores é \n" + num1 * num2);
                     break;
                 case 4:
-                    System.out.printf("a divisão dos valores é  \n" + (num1/num2) );
+                    System.out.printf("a divisão dos valores é  \n" + (num1 / num2));
                     break;
                 default:
-                System.out.println("Opção inválida");
+                    System.out.println("Opção inválida");
                     break;
             }
-    }while (num1 > 0 && num2 > 0 && sinal == 0);
-}
+        } while (num1 > 0 && num2 > 0 && sinal == 0);
+    }
 }
